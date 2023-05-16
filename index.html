@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink BANK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>
+        Blue BANK
+    </h1>
+  </header>
+    <main>
+        <section class="left">
+            <h1>
+               Pare de se <span>embananar</span> 
+            </h1>
+            <h3>
+               Emprestimos no cartão de crédito com taxa fixa de 16% no total!
+            </h3>
+        </section>
+        <section class="right">
+            <form action="">
+                <label for="valor">Valor:</label>
+                <input type="number" name="" id="valorSolicitado">
+                <select name="" id="parcelaSolicitada">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </form>
+            <input class="btn-simular" type="button" value="simular" onclick="simular()">
+         <img class="hero-mobile" src="/hero1.png" alt="">
+            
+        </section>
+    </main>
+    <section class="resultado">
+        <img class="hero-mobile2" src="/hero4.png" alt="">
+        
+            <form class="container-resultado" action="">
+                <label for="valor">Valor Solicitado:</label> 
+            <input  id="displayValorSolicitado" type="number" value=""> 
+               <label for="parcelas"> Quantidade de Parcelas:</label>
+               <input id="displayParcelaSolicitada" type="number"> 
+           <label for="juros">Total com juros:</label> 
+           <input id="totalJuros" type="number">    
+             <label for="acrescimo">Valor do acrescimo:</label>
+              <input  id="valorAcrescimo" type="number"> 
+              <label for="valorDaParcela">Valor da Parcela:</label>
+              <input  type="number" name="valorDaParcela" id="valorParcela">
+            </form>
+     
+        
+    </section>
+  <script src="scripts.js"></script>
+</body>
+</html>
