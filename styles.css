@@ -1,76 +1,98 @@
-
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    transition: 400ms;
 }
+
 :root {
     --cor-destaque: #023e8a;
-  }
-header h1{
+}
+
+header h1 {
     margin: 1rem;
-    width:175px;
+    width: 175px;
     color: var(--cor-destaque);
     border-bottom-color: var(--cor-destaque);
     border-bottom-width: 10px;
     border-bottom-style: solid;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
     gap: 1rem
 }
-.left h1{
+
+.left h1 {
     margin: 1rem;
     font-size: 3.2rem;
     margin-top: 60px;
 }
-.left h3{
+
+.left h3 {
     margin: 1rem;
     font-size: 1.2rem;
     margin-top: 20px;
     font-weight: 400;
     text-align: center;
-    
+
 }
-.left span{
+
+.left span {
     color: var(--cor-destaque);
 }
 
-.right{
+.right {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
     align-items: center;
     font-weight: 600;
 }
-.right input, select{
+
+.right input,
+select {
     font-size: 1.2rem;
 
 
 }
-.right input{
+
+.right input {
     width: 180px;
 }
-.btn-simular{
+
+.btn-simular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 6rem;
     height: 3rem;
     border-radius: 15px;
     margin-top: 25px;
-    background-color:var(--cor-destaque);
+    background-color: var(--cor-destaque);
     color: white;
+    text-align: center;
+    text-decoration: none;
+   
 }
-.resultado{
+
+.btn-simular:hover{
+    box-shadow: 2px 20px 30px 1px var(--cor-destaque);
+}
+.resultado {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
     height: 100vh;
-  
+
 }
-.container-resultado{
+
+.container-resultado {
     background-color: var(--cor-destaque);
     color: white;
     width: 300px;
@@ -80,18 +102,19 @@ main{
     flex-direction: column;
     align-items: center;
 }
-.container-resultado label{
+
+.container-resultado label {
     margin: 1rem;
 }
 
-.resultado-parcela{
+.resultado-parcela {
     background-color: white;
     padding: 10px;
     border-radius: 32px;
     color: #219ebc;
 }
 
-.container-resultado input{
+.container-resultado input {
     width: 150px;
     height: 23px;
     border-radius: 15px;
@@ -99,15 +122,30 @@ main{
     text-align: center;
 }
 
-.hero-mobile{
-  margin-top: 20px;
+.hero-mobile {
+    margin-top: 20px;
 }
 
-.hero-mobile2{
+.hero-mobile2 {
     width: 130px;
 }
 
-#valorParcela{
+#valorParcela {
     padding: 8px;
     font-size: 1.5rem;
 }
+
+/* Mantem o fundo branco e o texto preto mesmo sob efeito do disable no html*/
+
+input{
+    background-color: white;
+    color: black;
+}
+
+/* estilização dos campos de entrada na primeira tela */
+
+.valorSolicitado, .parcelaSolicitada{
+    border-radius: 15px;
+    text-align: center;
+}
+
