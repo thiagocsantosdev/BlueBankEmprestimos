@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,27 @@
     <title>Pink BANK</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>
-        Blue BANK
-    </h1>
-  </header>
+    <header>
+        <h1>
+            Blue BANK
+        </h1>
+    </header>
     <main>
         <section class="left">
             <h1>
-               Pare de se <span>embananar</span> 
+                Pare de se <span>embananar</span>
             </h1>
             <h3>
-               Emprestimos no cartão de crédito com taxa fixa de 16% no total!
+                Emprestimos no cartão de crédito com taxa fixa de 16% no total!
             </h3>
         </section>
         <section class="right">
             <form action="">
                 <label for="valor">Valor:</label>
-                <input type="number" name="" id="valorSolicitado">
-                <select name="" id="parcelaSolicitada">
+                <input class="valorSolicitado" type="number" name="" id="valorSolicitado">
+                <select class="parcelaSolicitada" name="" id="parcelaSolicitada">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -41,29 +43,31 @@
                     <option value="12">12</option>
                 </select>
             </form>
-            <input class="btn-simular" type="button" value="simular" onclick="simular()">
-         <img class="hero-mobile" src="/hero1.png" alt="">
-            
+           
+            <a id="rolamento" href=""  class="btn-simular" type="button" value="simular" onclick="simular()" >Simular</a>.
+            <img class="hero-mobile" src="/hero1.png" alt="Para todos, Imagem de uma pessoa sentada assistindo a explicação de outra sendo feito num quadro">
+
         </section>
     </main>
-    <section class="resultado">
-        <img class="hero-mobile2" src="/hero4.png" alt="">
-        
-            <form class="container-resultado" action="">
-                <label for="valor">Valor Solicitado:</label> 
-            <input  id="displayValorSolicitado" type="number" value=""> 
-               <label for="parcelas"> Quantidade de Parcelas:</label>
-               <input id="displayParcelaSolicitada" type="number"> 
-           <label for="juros">Total com juros:</label> 
-           <input id="totalJuros" type="number">    
-             <label for="acrescimo">Valor do acrescimo:</label>
-              <input  id="valorAcrescimo" type="number"> 
-              <label for="valorDaParcela">Valor da Parcela:</label>
-              <input  type="number" name="valorDaParcela" id="valorParcela">
-            </form>
-     
-        
+    <section class="resultado" id="containerResultado">
+        <img class="hero-mobile2" src="/hero4.png" alt="Duas pessoas saltando com bandeiras, sentimendo de felicidade">
+
+        <form class="container-resultado" action="">
+            <label for="valor">Valor Solicitado:</label>
+            <input id="displayValorSolicitado" type="number" value="" disabled>
+            <label for="parcelas"> Quantidade de Parcelas:</label>
+            <input id="displayParcelaSolicitada" type="number" disabled>
+            <label for="juros">Total com juros:</label>
+            <input id="totalJuros" type="number" disabled>
+            <label for="acrescimo">Valor do acrescimo:</label>
+            <input id="valorAcrescimo" type="number" disabled>
+            <label for="valorDaParcela">Valor da Parcela:</label>
+            <input type="number" name="valorDaParcela" id="valorParcela" disabled>
+        </form>
+
+
     </section>
-  <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
