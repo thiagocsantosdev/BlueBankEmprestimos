@@ -10,6 +10,8 @@
     --cor-destaque: #023e8a;
 }
 
+
+
 header h1 {
     margin: 1rem;
     width: 175px;
@@ -24,7 +26,9 @@ main {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    gap: 1rem
+    gap: 1rem;
+    flex-wrap: wrap;
+    
 }
 
 .left h1 {
@@ -101,6 +105,7 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 3rem;
 }
 
 .container-resultado label {
@@ -128,6 +133,7 @@ select {
 
 .hero-mobile2 {
     width: 130px;
+    margin-top: 3rem;
 }
 
 #valorParcela {
@@ -147,5 +153,9 @@ input{
 .valorSolicitado, .parcelaSolicitada{
     border-radius: 15px;
     text-align: center;
+}
+
+footer{
+   text-align: center;
 }
 
